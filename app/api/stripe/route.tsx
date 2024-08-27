@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
         const paymentInvoiceSucceeded = event.data.object as any;
 
         const customerEmail: string =
-          paymentInvoiceSucceeded.customer_email || "g.funicello@gmail.com";
+          paymentInvoiceSucceeded.customer_email || "nicolasorbetto@gmail.com";
 
         const { error } = await supabaseAdmin.from("subscriptions").upsert(
           {
